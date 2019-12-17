@@ -53,14 +53,8 @@ jobs: # a collection of steps
 # Define a workflow for executing job.
 workflows:
   version: 2
-  build:
+  workflow:
     jobs:
       - build_project
       - notify_outdated
-    triggers:
-      - schedule:
-          cron: "* * * * *"
-          filters:
-            branches:
-              only:
-                - master
+    
