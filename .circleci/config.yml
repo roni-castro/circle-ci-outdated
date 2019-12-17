@@ -59,4 +59,11 @@ workflows:
   workflow_notify:
     jobs:
       - notify_outdated
+    triggers:
+    - schedule:
+        cron: "* * * * *"
+        filters:
+          branches:
+            only:
+              - master
     
