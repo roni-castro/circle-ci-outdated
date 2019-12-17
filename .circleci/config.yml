@@ -60,10 +60,10 @@ workflows:
     jobs:
       - notify_outdated
     triggers:
-    - schedule:
-        cron: "* * * * *"
-        filters:
-          branches:
-            only:
-              - master
+      - schedule:
+          cron: "0 12 * * *" # every 12pm
+          filters:
+            branches:
+              only:
+                - master
     
