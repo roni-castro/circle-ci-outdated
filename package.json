@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/roni-castro/circle-ci-outdated#readme",
   "devDependencies": {
-    "jest": "^24.9.0",
+    "jest": "24.1.0",
     "nyc": "^14.1.1",
     "yarn-outdated-notifier": "^1.1.0"
   }
