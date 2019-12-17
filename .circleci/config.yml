@@ -61,7 +61,7 @@ workflows:
       - notify_outdated
     triggers:
       - schedule:
-          cron: "0 0 1,15 * *" # every 15 days
+          cron: "0 12 * * *" # every 12pm
           filters:
             branches:
               only:
