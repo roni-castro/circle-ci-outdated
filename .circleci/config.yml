@@ -60,10 +60,11 @@ workflows:
     jobs:
       - notify_outdated
     triggers:
-    - schedule:
-        cron: "* * * * *"
-        filters:
-          branches:
-            only:
-              - master
+      - schedule:
+          cron: "* * * * *"
+          filters:
+            branches:
+              only:
+                - master
+                - cron-notification-job-trigger
     
