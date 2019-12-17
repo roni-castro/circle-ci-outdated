@@ -1,0 +1,22 @@
+{
+  "name": "outdated-notifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roni-castro/circle-ci-outdated.git"
+  },
+  "author": "Roni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roni-castro/circle-ci-outdated/issues"
+  },
+  "homepage": "https://github.com/roni-castro/circle-ci-outdated#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
