@@ -44,7 +44,7 @@ jobs: # a collection of steps
       - checkout
       - run: yarn
       - run: |
-          yarn outdated-notifieraa \
+          yarn outdated-notifier \
             --labels "yarn-outdated" \
             --changelogs "changelogs.yml" \
             --api-token $GITHUB_API_TOKEN
