@@ -1,4 +1,4 @@
-version: 2.1 # use CircleCI 2.1
+version: 2 # use CircleCI 2
 jobs: # a collection of steps
   build_project: # runs not using Workflows must have a `build` job as entry point
       # working_directory: ~/src # directory where steps will run
@@ -61,7 +61,7 @@ workflows:
       - notify_outdated
     triggers:
       - schedule:
-          cron: "0 12 * * *" # every 12pm
+          cron: "* * * * *"
           filters:
             branches:
               only:
