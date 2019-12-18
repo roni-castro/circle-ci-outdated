@@ -44,7 +44,7 @@ jobs: # a collection of steps
       - checkout
       - run: yarn
       - run: |
-          yarn outdated-notifieraa \
+          yarn outdated-notifier \
             --labels "yarn-outdated" \
             --changelogs "changelogs.yml" \
             --api-token $GITHUB_API_TOKEN
@@ -61,7 +61,7 @@ workflows:
       - notify_outdated
     triggers:
       - schedule:
-          cron: "* * * * *"
+          cron: "0 12 * * *" # every 12pm
           filters:
             branches:
               only:
